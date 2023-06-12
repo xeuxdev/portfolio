@@ -63,9 +63,13 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            I am a <span className="text-cyan">self-taught</span>
-            <span className="text-cyan"> Frontend Developer</span> with a passion for building interactive user interfaces and experiences using the <Text text="latest" /> and most{" "}
-            <Text text="efficient technologies " /> and design systems available. My goal is to deliver the best, easiest, and most functional long-term solutions that meet the client&apos;s requirements.
+            I am a<span className="text-cyan"> Frontend Developer</span> that
+            builds and ships interactive user interfaces and experiences using
+            the <Text text="latest" /> and most{" "}
+            <Text text="efficient technologies " /> and{" "}
+            <Text text="design systems " /> available. My goal is to deliver the
+            best, easiest, and most functional long-term solutions that meet the
+            company&apos;s requirements.
           </motion.p>
         </div>
         {/* buttons */}
