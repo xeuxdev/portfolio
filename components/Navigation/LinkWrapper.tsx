@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import Link from "next/link"
 
 type Props = {
@@ -9,10 +8,9 @@ const LinkWrapper = ({ name }: Props) => {
   return (
     <Link
       href={`${name == "home" ? "/" : name.toLowerCase().replace(" ", "")}`}
+      className="text-base hover:text-cyan  text-text capitalize w-fit duration-300 font-normal tracking-wide"
     >
-      <a className="text-base hover:text-cyan  text-text capitalize w-fit duration-300 font-normal tracking-wide">
-        {name}
-      </a>
+      {name}
     </Link>
   )
 }

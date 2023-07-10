@@ -8,10 +8,8 @@ type Props = {
 
 const IconLinks = ({ name, link, children }: Props) => {
   return (
-    <Link href={`${link}`}>
-      <a aria-label={name} target={"_blank"}>
-        {children}
-      </a>
+    <Link href={`${link}`} aria-label={name} target={"_blank"}>
+      {children}
     </Link>
   )
 }

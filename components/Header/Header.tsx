@@ -47,11 +47,11 @@ const Header = () => {
               initial={{ y: -100 }}
               animate={{ y: 0, transition: { duration: 0.3, delay: 0.1 } }}
             >
-              <a href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
+              <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
                 <span className="text-white text-base mr-3 group:hover:mr-1 font-normal capitalize tracking-wide">
                   resume
                 </span>
-              </a>
+              </Link>
               <Download height="4" width="4" />
             </motion.button>
           </div>

@@ -7,19 +7,22 @@ type TechCardProps = {
 
 const Technologies = () => {
   const CardItems: string[] = [
+    "react",
+    "javascript",
+    "typescript",
+    "nextjs",
+    "tailwindcss",
+    "nodejs",
+    "express",
+    "vue",
+    "mongodb",
+    "firebase",
+    "git",
+    "github",
+    "figma",
     "html5",
     "css3",
     "sass",
-    "git",
-    "github",
-    "javascript",
-    "react",
-    "typescript",
-    "nextjs",
-    "nodejs",
-    "express",
-    "mongodb",
-    "figma",
   ]
   return (
     <>

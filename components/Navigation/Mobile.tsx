@@ -51,11 +51,11 @@ const Mobile = ({ handleMenuToggle }: Props) => {
             <button
               className={`flex items-center justify-center rounded-md px-5 h-11 bg-buttonBg  hover:bg-cyan duration-300 group cursor-pointer`}
             >
-              <a href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
+              <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
                 <span className="text-white text-base mr-3 group:hover:mr-1 font-semibold capitalize">
                   resume
                 </span>
-              </a>
+              </Link>
               <Download height="4" width="4" />
             </button>
           </div>
@@ -77,13 +77,10 @@ const LinkWrapper = ({ name, handleMenuToggle }: linkProp) => {
   return (
     <Link
       href={`${name == "home" ? "/" : name.toLowerCase().replace(" ", "")}`}
+      className="text-lg  hover:text-cyan  text-text capitalize w-fit duration-300 flex items-center space-x-4"
+      onClick={handleMenuToggle}
     >
-      <a
-        className="text-lg  hover:text-cyan  text-text capitalize w-fit duration-300 flex items-center space-x-4"
-        onClick={handleMenuToggle}
-      >
-        {name}
-      </a>
+      {name}
     </Link>
   )
 }

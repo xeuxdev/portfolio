@@ -6,7 +6,7 @@ const ResumeButton = () => {
     <button
       className={`flex items-center justify-center rounded-md px-5 w-fit h-11 bg-buttonBg  hover:bg-cyan_dark duration-300 group cursor-pointer`}
     >
-      <a href={`docs/resume.pdf`} target="_blank" rel="noreferrer">
+      <Link href={`docs/resume.pdf`} target="_blank" rel="noreferrer">
         <div className="flex w-full h-full items-center">
           <span className="text-white text-sm mr-3 group:hover:mr-1 font-normal capitalize tracking-wide">
             view resume
@@ -15,7 +15,7 @@ const ResumeButton = () => {
             <Download height="4" width="4" />
           </div>
         </div>
-      </a>
+      </Link>
     </button>
   )
 }
