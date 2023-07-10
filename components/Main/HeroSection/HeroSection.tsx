@@ -53,7 +53,7 @@ const HeroSection = () => {
           </motion.p>
         </div>
         {/* brief about info */}
-        <div className="max-w-[33.75rem]">
+        <div className="max-w-[40.75rem]">
           <motion.p
             className="text-text_Light text-base md:text-xl md:leading-[1.3] "
             initial={{ y: 20, opacity: 0 }}
@@ -63,13 +63,7 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            I am a<span className="text-cyan"> Frontend Developer</span> that
-            builds and ships interactive user interfaces and experiences using
-            the <Text text="latest" /> and most{" "}
-            <Text text="efficient technologies " /> and{" "}
-            <Text text="design systems " /> available. My goal is to deliver the
-            best, easiest, and most functional long-term solutions that meet the
-            company&apos;s requirements.
+            As a<span className="text-cyan"> Frontend Developer,</span> I specialize in building and launching dynamic user interfaces and experiences that captivate both clients and companies. I harness the power of the <Text text="efficient technologies " /> and <Text text="design systems " /> to create interactive solutions that leave a lasting impression. My primary objective is to deliver the best, easiest, and most functional long-term solutions that not only meet the requirements of the company but also exceed the expectations of clients. With a strong commitment to user satisfaction, I strive to create seamless and engaging experiences that seamlessly blend aesthetic appeal with practical functionality.
           </motion.p>
         </div>
         {/* buttons */}

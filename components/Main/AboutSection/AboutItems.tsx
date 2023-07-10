@@ -30,13 +30,7 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              A first year computer science student, a{" "}
-              <span className="text-cyan">self-taught </span>
-              Front-end Developer transitioning to Full-Stack Development with a
-              passion and love for coding and solving problems that impact the
-              lives of people. I can develop modern responsive websites from
-              scratch and build them into user-friendly and accessible web
-              experiences for your users.
+              A sophomore computer science student, As a Frontend Developer, I specialize in building and launching dynamic user interfaces and experiences that captivate both clients and companies. I harness the power of the latest technologies and design systems to create interactive solutions that leave a lasting impression. My primary objective is to deliver the best, easiest, and most functional long-term solutions that not only meet the requirements of the company but also exceed the expectations of clients. With a strong commitment to user satisfaction, I strive to create seamless and engaging experiences that seamlessly blend aesthetic appeal with practical functionality.
             </motion.p>
             <motion.p
               className="font-normal text-lg text-text lg:text-xl mb-6"
@@ -57,9 +51,9 @@ const AboutItems = () => {
               whileInView={aboutVariant.p3}
               viewport={{ once: true }}
             >
-              Additionally, i am a lover of open source softwares. I am also
+              Additionally, i am a lover of open source softwares and i&apos;m also
               looking for internships and projects to boost my skills and to get
-              experience in software {"Full Stack Development"}.
+              experience in Frontend Development.
             </motion.p>
           </div>
         </div>

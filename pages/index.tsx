@@ -5,7 +5,7 @@ import { HeroSection, HeadSection } from "../components"
 const Home: NextPage = () => {
   return (
     <>
-      <HeadSection title="My Portfolio - Home Page" page="Home" />
+      <HeadSection title="Tochukwu John Onuabueke" page="Home" />
 
       <main className="relative w-full font-pop bg-body overflow-x-hidden">
         <section className="relative min-h-screen flex justify-center items-center z-20 pt-28 pb-14 font-pop">

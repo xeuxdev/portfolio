@@ -5,7 +5,7 @@ import { AboutItems, HeadSection, PageTitle, Technologies } from "../components"
 const About: NextPage = () => {
   return (
     <>
-      <HeadSection title="Portfolio - About Me" page="About" />
+      <HeadSection title="About Tochukwu John Onuabueke" page="About" />
       <main className="relative font-pop  min-h-screen flex items-center justify-center  w-full bg-body overflow-x-hidden py-16 ">
         <div className="max-w-4xl xl:max-w-[1000px] px-6 md:px-10 lg:px-0">
           <PageTitle page="About" addon="Me" />
