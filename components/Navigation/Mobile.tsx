@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import { menuVariant, navItem } from "../../variants/menuVariant"
 import { Download } from "../Main/icons"
 
@@ -11,14 +11,14 @@ type Props = {
 const Mobile = ({ handleMenuToggle }: Props) => {
   const linkArray = ["home", "about", "projects", "contact me"]
   return (
-    <motion.div
-      className="md:hidden absolute h-screen overflow-hidden w-3/4 top-0 right-0 bg-veryDark z-50"
+    <m.div
+      className="absolute top-0 right-0 z-50 w-3/4 h-screen overflow-hidden md:hidden bg-veryDark"
       initial={{ opacity: 0 }}
       variants={menuVariant}
       whileInView={"show"}
       exit={"exit"}
     >
-      <div className="px-6 md:px-10 w-full">
+      <div className="w-full px-6 md:px-10">
         <div className="absolute right-6 top-6 ">
           {/* hamburger */}
           <div className="lg:hidden" onClick={handleMenuToggle}>
@@ -26,14 +26,14 @@ const Mobile = ({ handleMenuToggle }: Props) => {
               src={"/icons/close.svg"}
               alt="Open Menu Icon"
               aria-label="open mobile menu"
-              width={40}
+              width={20}
               height={25}
             />
           </div>
         </div>
 
         {/* links */}
-        <motion.div
+        <m.div
           className="flex flex-col items-center justify-center h-screen space-y-7"
           initial={{ opacity: 0 }}
           whileInView={navItem.show}
@@ -52,17 +52,17 @@ const Mobile = ({ handleMenuToggle }: Props) => {
               className={`flex items-center justify-center rounded-md px-5 h-11 bg-buttonBg  hover:bg-cyan duration-300 group cursor-pointer`}
             >
               <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
-                <span className="text-white text-base mr-3 group:hover:mr-1 font-semibold capitalize">
+                <span className="mr-3 text-base font-semibold text-white capitalize group:hover:mr-1">
                   resume
                 </span>
               </Link>
               <Download height="4" width="4" />
             </button>
           </div>
-        </motion.div>
+        </m.div>
       </div>
       Mobile
-    </motion.div>
+    </m.div>
   )
 }
 
@@ -77,7 +77,7 @@ const LinkWrapper = ({ name, handleMenuToggle }: linkProp) => {
   return (
     <Link
       href={`${name == "home" ? "/" : name.toLowerCase().replace(" ", "")}`}
-      className="text-lg  hover:text-cyan  text-text capitalize w-fit duration-300 flex items-center space-x-4"
+      className="flex items-center space-x-4 text-lg capitalize duration-300 hover:text-cyan text-text w-fit"
       onClick={handleMenuToggle}
     >
       {name}

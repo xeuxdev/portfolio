@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import Image from "next/image"
 
 type TechCardProps = {
@@ -27,15 +27,15 @@ const Technologies = () => {
   return (
     <>
       <div className="w-full pt-10 mx-auto">
-        <motion.div
-          className="grid grid-cols-3 lg:grid-cols-4 gap-4 w-full"
+        <m.div
+          className="grid w-full grid-cols-3 gap-4 lg:grid-cols-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
         >
           {CardItems.map((item, index) => (
             <TechCard name={item} key={index} />
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </>
   )
@@ -45,9 +45,9 @@ export default Technologies
 
 function TechCard({ name }: TechCardProps) {
   return (
-    <div className="h-24 md:h-32 lg:h-36 rounded-md bg-buttonBg grid place-items-center cursor-pointer hover:scale-105 duration-200">
-      <motion.div
-        className="w-7 h-7 md:h-9 md:w-9 lg:w-10 lg:h-10 relative"
+    <div className="grid h-24 duration-200 rounded-md cursor-pointer md:h-32 lg:h-36 bg-buttonBg place-items-center hover:scale-105">
+      <m.div
+        className="relative w-7 h-7 md:h-9 md:w-9 lg:w-10 lg:h-10"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{
           opacity: 1,
@@ -57,9 +57,9 @@ function TechCard({ name }: TechCardProps) {
         viewport={{ once: true }}
       >
         <Image src={`/images/${name}.svg`} alt={`${name}`} layout="fill" />
-      </motion.div>
-      <motion.div
-        className="text-white text-base md:text-xl lg:text-2xl font-normal tracking-wide capitalize"
+      </m.div>
+      <m.div
+        className="text-base font-normal tracking-wide text-white capitalize md:text-xl lg:text-2xl"
         initial={{ opacity: 0, y: -15 }}
         whileInView={{
           opacity: 1,
@@ -68,7 +68,7 @@ function TechCard({ name }: TechCardProps) {
         }}
       >
         {name}
-      </motion.div>
+      </m.div>
     </div>
   )
 }

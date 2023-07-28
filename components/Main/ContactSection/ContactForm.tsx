@@ -1,17 +1,17 @@
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import { contactFormVariant } from "../../../variants/contactVariants"
 
 const ContactForm = () => {
   return (
-    <motion.form
+    <m.form
       action="https://formsubmit.co/b8e64647abbe4a2a4830ff3022995db4"
       method="POST"
-      className="flex flex-col justify-center items-center space-y-6 w-full"
+      className="flex flex-col items-center justify-center w-full space-y-6"
       initial={contactFormVariant.name.init}
       variants={contactFormVariant.name}
       animate={contactFormVariant.name.show}
     >
-      <div className="h-14 w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+      <div className="w-full h-14 md:max-w-md lg:max-w-lg xl:max-w-xl">
         <input
           type="text"
           name="name"
@@ -21,7 +21,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="h-14 w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+      <div className="w-full h-14 md:max-w-md lg:max-w-lg xl:max-w-xl">
         <input
           type="email"
           name="email"
@@ -30,7 +30,7 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="h-14 w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+      <div className="w-full h-14 md:max-w-md lg:max-w-lg xl:max-w-xl">
         <input
           type="text"
           name="textarea"
@@ -44,12 +44,12 @@ const ContactForm = () => {
         <button
           type="submit"
           aria-label="send me the email"
-          className="w-full h-full outline-none rounded-md bg-cyan_dark hover:bg-cyan duration-300 focus-visible:ring-cyan/70 focus-visible:ring-4 focus-visible:bg-cyan"
+          className="w-full h-full duration-300 rounded-md outline-none bg-cyan_dark hover:bg-cyan focus-visible:ring-cyan/70 focus-visible:ring-4 focus-visible:bg-cyan"
         >
           Send it to me
         </button>
       </div>
-    </motion.form>
+    </m.form>
   )
 }
 

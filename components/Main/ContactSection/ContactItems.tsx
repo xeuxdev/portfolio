@@ -1,20 +1,20 @@
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import { contactItemVariant } from "../../../variants/contactVariants"
 
 const ContactIcon = () => {
   return (
     <div className="max-w-xl mx-auto">
-      <motion.h1
-        className="text-center text-cyan text-4xl md:text-6xl font-semibold mb-5"
+      <m.h1
+        className="mb-5 text-4xl font-semibold text-center text-cyan md:text-6xl"
         initial={contactItemVariant.heading.init}
         variants={contactItemVariant.heading}
         whileInView={contactItemVariant.heading.show}
         viewport={{ once: true }}
       >
         Get In Touch
-      </motion.h1>
-      <motion.p
-        className="text-text text-lg md:text-xl text-center"
+      </m.h1>
+      <m.p
+        className="text-lg text-center text-text md:text-xl"
         initial={contactItemVariant.p1.init}
         variants={contactItemVariant.p1}
         whileInView={contactItemVariant.p1.show}
@@ -24,7 +24,7 @@ const ContactIcon = () => {
         presence to the web?. Have a chat with me about your idea via any of the
         links below or send me an email by filling the form below. My inbox is
         always open.
-      </motion.p>
+      </m.p>
     </div>
   )
 }

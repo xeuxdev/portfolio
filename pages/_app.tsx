@@ -1,28 +1,19 @@
 import "../styles/globals.css"
 import type { AppProps } from "next/app"
 import { ContactIcons, ContactIconsMobile, Header } from "../components"
-import { useEffect, useState } from "react"
+import { LazyMotion, domAnimation } from "framer-motion"
+import { useMediaQuery } from "../hooks/useMediaQuery"
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [screenSize, setScreenSize] = useState("")
+  const matches = useMediaQuery("(min-width: 768px)")
 
-  const handleResize = () => {
-    const size = window.screen.width
-    size < 768 ? setScreenSize("small") : setScreenSize("large")
-  }
-
-  useEffect(() => {
-    window.onload = () => handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [screenSize])
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
-      {screenSize == "small" ? <ContactIconsMobile /> : <ContactIcons />}
+      <LazyMotion features={domAnimation}>
+        <Header />
+        <Component {...pageProps} />
+        {!matches ? <ContactIconsMobile /> : <ContactIcons />}
+      </LazyMotion>
     </>
   )
 }

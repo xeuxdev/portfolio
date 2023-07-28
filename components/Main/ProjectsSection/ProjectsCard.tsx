@@ -1,9 +1,10 @@
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { projectVariant } from "../../../variants/projectVariant"
 import Github from "../../Utils/icons/Github"
 import LiveLink from "./icon/LiveLink"
+import { useEffect, useState } from "react"
 
 export type ProjectCardprops = {
   image: string
@@ -24,9 +25,19 @@ const ProjectsCard = ({
   builtWith,
   orientation,
 }: ProjectCardprops) => {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
   return (
-    <motion.div
-      className="w-full shadow-2xl lg:shadow-none rounded-lg"
+    <m.div
+      className="w-full rounded-lg shadow-2xl lg:shadow-none"
       initial={{ opacity: 0, y: 25 }}
       variants={projectVariant}
       whileInView={projectVariant.image}
@@ -43,12 +54,7 @@ const ProjectsCard = ({
               orientation === 1 ? "lg:left-0" : "lg:left-full"
             }`}
           >
-            <Image
-              src={`/${image}`}
-              alt={`${name} image`}
-              layout="fill"
-              priority
-            />
+            <Image src={`/${image}`} alt={`${name} image`} fill priority />
           </Link>
         </div>
 
@@ -62,24 +68,24 @@ const ProjectsCard = ({
         >
           <Link
             href={`${link}`}
-            className="text-white text-xl lg:text-2xl font-bold mb-4 tracking-wider capitalize cursor-pointer select-none"
+            className="mb-4 text-xl font-bold tracking-wider text-white capitalize cursor-pointer select-none lg:text-2xl"
           >
             {name}
           </Link>
-          <div className="md:bg-gray/90 text-white text-base lg:text-lg py-5 md:p-6  lg:px-7 lg:py-7 font-normal mb-4 rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 duration-300">
+          <div className="py-5 mb-4 text-base font-normal text-white duration-300 rounded-lg shadow-xl md:bg-gray/90 lg:text-lg md:p-6 lg:px-7 lg:py-7 hover:shadow-2xl hover:-translate-y-1">
             {about}
           </div>
-          <div className="flex flex-wrap justify-center md:justify-start items-center space-x-4">
+          <div className="flex flex-wrap items-center justify-center space-x-4 md:justify-start">
             {builtWith.map((item, index) => (
               <span
                 key={index}
-                className="text-cyan rounded-md text-sm lg:text-base select-none capitalize font-semibold"
+                className="text-sm font-semibold capitalize rounded-md select-none text-cyan lg:text-base"
               >
                 {item}
               </span>
             ))}
           </div>
-          <div className="pt-5 pb-2 space-x-4 flex items-center mt-5">
+          <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
             <Link href={`${link}`}>
               <>
                 <Github />
@@ -93,7 +99,7 @@ const ProjectsCard = ({
           </div>
         </div>
       </div>
-    </motion.div>
+    </m.div>
   )
 }
 

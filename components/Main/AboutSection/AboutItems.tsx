@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { m } from "framer-motion"
 import Image from "next/image"
 import { aboutVariant } from "../../../variants/aboutVariant"
 
@@ -9,21 +9,21 @@ const AboutItems = () => {
       <div className="flex flex-col items-center justify-center lg:flex-row lg:space-x-10 ">
         {/* text */}
         <div className="text lg:flex-[45%]">
-          <motion.h1
+          <m.h1
             className="flex items-start mb-6 space-x-2 text-xl font-normal text-white lg:text-2xl font-pop lg:space-x-3"
             initial={{ opacity: 0, y: 20 }}
             variants={aboutVariant}
             whileInView={aboutVariant.heading}
             viewport={{ once: true }}
           >
-            <p>Hi{"👋, "} I am</p>
+            <p>Hi{"👋, "} I&apos;m</p>
             <p className="relative font-semibold font-pop text-cyan w-fit">
               Tochukwu John,
             </p>
-          </motion.h1>
+          </m.h1>
           {/* info */}
           <div className="mb-10 md:mb-12 lg:mb-0">
-            <motion.p
+            <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"
               variants={aboutVariant}
               initial={{ opacity: 0, y: 25 }}
@@ -41,8 +41,8 @@ const AboutItems = () => {
               commitment to user satisfaction, I strive to create seamless and
               engaging experiences that seamlessly blend aesthetic appeal with
               practical functionality.
-            </motion.p>
-            <motion.p
+            </m.p>
+            <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"
               variants={aboutVariant}
               initial={{ opacity: 0, y: 25 }}
@@ -53,8 +53,8 @@ const AboutItems = () => {
               passion for months now. During this time, I have helped various
               clients establish their presence online. I also love learning new
               technologies and frameworks.
-            </motion.p>
-            <motion.p
+            </m.p>
+            <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl md:mb-11"
               initial={{ opacity: 0, y: 20 }}
               variants={aboutVariant}
@@ -64,11 +64,11 @@ const AboutItems = () => {
               Additionally, i am a lover of open source softwares and i&apos;m
               also looking for internships and projects to boost my skills and
               to get experience in Frontend Development.
-            </motion.p>
+            </m.p>
           </div>
         </div>
         {/* images/illustrsions */}
-        <motion.div
+        <m.div
           className="lg:flex-[40%] w-full md:max-w-md relative cursor-pointer group"
           initial={{ opacity: 0, y: 20 }}
           variants={aboutVariant}
@@ -81,7 +81,7 @@ const AboutItems = () => {
                 src={"/images/me.webp"}
                 alt="moi"
                 priority={true}
-                layout="fill"
+                fill
                 quality={100}
                 placeholder={"blur"}
                 blurDataURL={"/images/me.webp"}
@@ -89,7 +89,7 @@ const AboutItems = () => {
             </div>
           </div>
           <div className="absolute h-[28rem] md:w-[105%] md:h-[37.5rem] lg:h-[30rem] xl:h-[34.5rem] w-full top-5 left-3 border-2 border-body z-10 bg-buttonBg rounded-lg group-hover:top-4 group-hover:left-3 duration-500"></div>
-        </motion.div>
+        </m.div>
       </div>
     </>
   )
