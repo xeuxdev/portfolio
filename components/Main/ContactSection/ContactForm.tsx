@@ -44,7 +44,7 @@ const ContactForm = () => {
         <button
           type="submit"
           aria-label="send me the email"
-          className="w-full h-full duration-300 rounded-md outline-none bg-cyan_dark hover:bg-cyan focus-visible:ring-cyan/70 focus-visible:ring-4 focus-visible:bg-cyan"
+          className="w-full h-full duration-300 rounded-md outline-none bg-cyan hover:bg-cyan focus-visible:ring-cyan/70 focus-visible:ring-4 focus-visible:bg-cyan"
         >
           Send it to me
         </button>

@@ -86,12 +86,12 @@ const ProjectsCard = ({
             ))}
           </div>
           <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
-            <Link href={`${link}`}>
+            <Link href={`${link}`} aria-label={`${name} github link`}>
               <>
                 <Github />
               </>
             </Link>
-            <Link href={`${liveLink}`}>
+            <Link href={`${liveLink}`} aria-label={`${name} live link`}>
               <>
                 <LiveLink />
               </>
