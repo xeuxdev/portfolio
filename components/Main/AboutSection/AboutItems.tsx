@@ -6,34 +6,44 @@ const AboutItems = () => {
   return (
     <>
       {" "}
-      <div className="flex items-center justify-center flex-col lg:flex-row  lg:space-x-10 ">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:space-x-10 ">
         {/* text */}
         <div className="text lg:flex-[45%]">
           <motion.h1
-            className="font-normal text-white text-xl lg:text-2xl font-pop flex items-start space-x-2 lg:space-x-3 mb-6"
+            className="flex items-start mb-6 space-x-2 text-xl font-normal text-white lg:text-2xl font-pop lg:space-x-3"
             initial={{ opacity: 0, y: 20 }}
             variants={aboutVariant}
             whileInView={aboutVariant.heading}
             viewport={{ once: true }}
           >
             <p>Hi{"👋, "} I am</p>
-            <p className="font-pop text-cyan relative w-fit font-semibold">
+            <p className="relative font-semibold font-pop text-cyan w-fit">
               Tochukwu John,
             </p>
           </motion.h1>
           {/* info */}
           <div className="mb-10 md:mb-12 lg:mb-0">
             <motion.p
-              className="font-normal text-lg text-text lg:text-xl mb-6"
+              className="mb-6 text-lg font-normal text-text lg:text-xl"
               variants={aboutVariant}
               initial={{ opacity: 0, y: 25 }}
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              A sophomore computer science student, As a Frontend Developer, I specialize in building and launching dynamic user interfaces and experiences that captivate both clients and companies. I harness the power of the latest technologies and design systems to create interactive solutions that leave a lasting impression. My primary objective is to deliver the best, easiest, and most functional long-term solutions that not only meet the requirements of the company but also exceed the expectations of clients. With a strong commitment to user satisfaction, I strive to create seamless and engaging experiences that seamlessly blend aesthetic appeal with practical functionality.
+              A sophomore computer science student, As a Frontend Developer, I
+              specialize in building and launching dynamic user interfaces and
+              experiences that captivate both clients and companies. I harness
+              the power of the latest technologies and design systems to create
+              interactive solutions that leave a lasting impression. My primary
+              objective is to deliver the best, easiest, and most functional
+              long-term solutions that not only meet the requirements of the
+              company but also exceed the expectations of clients. With a strong
+              commitment to user satisfaction, I strive to create seamless and
+              engaging experiences that seamlessly blend aesthetic appeal with
+              practical functionality.
             </motion.p>
             <motion.p
-              className="font-normal text-lg text-text lg:text-xl mb-6"
+              className="mb-6 text-lg font-normal text-text lg:text-xl"
               variants={aboutVariant}
               initial={{ opacity: 0, y: 25 }}
               whileInView={aboutVariant.p2}
@@ -45,15 +55,15 @@ const AboutItems = () => {
               technologies and frameworks.
             </motion.p>
             <motion.p
-              className="font-normal text-lg text-text lg:text-xl mb-6 md:mb-11"
+              className="mb-6 text-lg font-normal text-text lg:text-xl md:mb-11"
               initial={{ opacity: 0, y: 20 }}
               variants={aboutVariant}
               whileInView={aboutVariant.p3}
               viewport={{ once: true }}
             >
-              Additionally, i am a lover of open source softwares and i&apos;m also
-              looking for internships and projects to boost my skills and to get
-              experience in Frontend Development.
+              Additionally, i am a lover of open source softwares and i&apos;m
+              also looking for internships and projects to boost my skills and
+              to get experience in Frontend Development.
             </motion.p>
           </div>
         </div>
@@ -66,9 +76,9 @@ const AboutItems = () => {
           viewport={{ once: true }}
         >
           <div className="w-full md:w-full h-[28rem] md:h-[37rem] lg:h-[30rem] xl:h-[34rem] relative rounded-md overflow-hidden border-2 border-cyan backdrop-blur-sm bg-cyan/20 z-20 ">
-            <div className="grayscale group-hover:grayscale-0 duration-500 w-full h-full relative">
+            <div className="relative w-full h-full duration-500 grayscale group-hover:grayscale-0">
               <Image
-                src={"/images/me1.jpeg"}
+                src={"/images/me.webp"}
                 alt="moi"
                 priority={true}
                 layout="fill"
