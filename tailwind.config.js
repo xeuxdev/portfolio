@@ -26,7 +26,7 @@ module.exports = {
       gray: "hsl(217, 13%, 27%)",
     },
     fontFamily: {
-      pop: [`"Poppins", "sans-serif"`],
+      pop: ["var(--font-poppins)"],
     },
     extend: {},
   },

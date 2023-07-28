@@ -30,10 +30,7 @@ const ContactIcons = () => {
             className="w-5 h-5"
             whileHover={{ y: -5, transition: { duration: 0.3 } }}
           >
-            <IconLinks
-              link="https://linkedin.com/in/tochukwu-john-19786b244"
-              name="Github"
-            >
+            <IconLinks link="https://linkedin.com/in/xeuxdev" name="Linkedin">
               <LinkedIn />
             </IconLinks>
           </m.li>
@@ -41,7 +38,7 @@ const ContactIcons = () => {
             className="w-5 h-5"
             whileHover={{ y: -5, transition: { duration: 0.3 } }}
           >
-            <IconLinks link="https://twitter.com/Headbwoi_1" name="Github">
+            <IconLinks link="https://twitter.com/xeuxdev" name="Twitter">
               <Twitter />
             </IconLinks>
           </m.li>

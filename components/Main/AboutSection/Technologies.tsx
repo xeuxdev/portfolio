@@ -56,7 +56,7 @@ function TechCard({ name }: TechCardProps) {
         }}
         viewport={{ once: true }}
       >
-        <Image src={`/images/${name}.svg`} alt={`${name}`} layout="fill" />
+        <Image src={`/images/${name}.svg`} alt={`${name}`} fill />
       </m.div>
       <m.div
         className="text-base font-normal tracking-wide text-white capitalize md:text-xl lg:text-2xl"
