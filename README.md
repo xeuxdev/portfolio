@@ -5,9 +5,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Clone this repository or use it as a template:
 
 ```bash
-npx create-next-app --example https://github.com/Headbwoi/nextjs-starter
+npx create-next-app --example https://github.com/xeuxdev/nextjs-starter
 # or
-yarn create next-app --example https://github.com/Headbwoi/nextjs-starter
+yarn create next-app --example https://github.com/xeuxdev/nextjs-starter
 ```
 
 To, run the development server:

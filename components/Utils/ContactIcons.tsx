@@ -22,7 +22,7 @@ const ContactIcons = () => {
             className="w-5 h-5"
             whileHover={{ y: -5, transition: { duration: 0.3 } }}
           >
-            <IconLinks link="https://github.com/Headbwoi" name="Github">
+            <IconLinks link="https://github.com/xeuxdev" name="Github">
               <Github />
             </IconLinks>
           </m.li>

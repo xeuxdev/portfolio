@@ -2,7 +2,7 @@
   {
     "name": "Belle Full ",
     "image": "projects/belle-full.webp",
-    "link": "https://github.com/Headbwoi/Belle-full",
+    "link": "https://github.com/xeuxdev/Belle-full",
     "liveLink": "https://belle-full.vercel.app/",
     "about": "A Meal Application featuring a landing page, meals page and a page to view saved meals. A user can search for a meal, see the details pertaining to the meal, save the meal and also view all saved meals for later use.",
     "builtWith": [
@@ -19,7 +19,7 @@
   {
     "name": "Countries Rest API",
     "image": "projects/countries-rest-api.webp",
-    "link": "https://github.com/Headbwoi/Countries_Rest_Api",
+    "link": "https://github.com/xeuxdev/Countries_Rest_Api",
     "liveLink": "https://countries-rest-api-blu.netlify.app/",
     "about": "List of Countries of the world from the Countries REST API, Featuring individual Pages for each Country showcasing the basic facts about each country. I had great fun building this and optimising it to be BLAZINGLY FAST for the amount of data being fetched and displayed.",
     "builtWith": [
@@ -34,7 +34,7 @@
   {
     "name": "Rock Paper Scissors",
     "image": "projects/rock-paper-scissors.webp",
-    "link": "https://github.com/Headbwoi/rock-paper-scissors-game",
+    "link": "https://github.com/xeuxdev/rock-paper-scissors-game",
     "liveLink": "https://rps-game-et-moi.netlify.app/",
     "about": "A Rock Paper Scissors Game built with React. Featuring A powerful AI designed to be efficient and unpredictable. Select your choice between Rock, Paper or Scissors and battle the AI immersing yourself in beautiful transitions and animations.",
     "builtWith": [
@@ -50,7 +50,7 @@
   {
     "name": "Crappo CryptoCurrency App",
     "image": "projects/crappo-cryptocurrency-app.webp",
-    "link": "https://github.com/Headbwoi/crappo-cryptocurrency-website-challenge",
+    "link": "https://github.com/xeuxdev/crappo-cryptocurrency-website-challenge",
     "liveLink": "https://crappo-cryptocurrency-app.vercel.app",
     "about": "Crappo CryptoCurrency App Landing page, The best crypto currency exchange available with the best imaginary service there is!. I had a lot of fun building this as i used it to learn nextjs.",
     "builtWith": [
@@ -65,7 +65,7 @@
   {
     "name": "Space Tourism",
     "image": "projects/space-home.webp",
-    "link": "https://github.com/Headbwoi/space-tourism-website",
+    "link": "https://github.com/xeuxdev/space-tourism-website",
     "liveLink": "https://space-tourism-website-et-moi.netlify.app/",
     "about": "Explore space with this website, made for space enthusiasts. Join your crew and see the technologies you'll travel with and to the destinations available. Interactive and filled with Animations.",
     "builtWith": [
@@ -81,7 +81,7 @@
   {
     "name": "Crowdo APP",
     "image": "projects/crowdo-app.webp",
-    "link": "https://github.com/Headbwoi/crowdo-app",
+    "link": "https://github.com/xeuxdev/crowdo-app",
     "liveLink": "https://crowdo-app.vercel.app/",
     "about": "A crowd funding App for everyone, State your goals and how to crowd fund and let us do the hard parts for you. viewers can select the package they choose to fund. Still in progress but coming soon.",
     "builtWith": [
@@ -98,7 +98,7 @@
   {
     "name": "Card Details Form",
     "image": "projects/card-details.webp",
-    "link": "https://github.com/Headbwoi/fem-interactive-card-details-form",
+    "link": "https://github.com/xeuxdev/fem-interactive-card-details-form",
     "liveLink": "https://fem-int-card-det-form.netlify.app/",
     "about": "A little webpage featuring form validation and visualisations and logic on how frontend form / card validations should be done. You Can share your opinions by Forking Contributing to this awesome project.",
     "builtWith": ["vs code", "react", "tailwindcss", "javaScript", "vite"]
@@ -107,15 +107,15 @@
   {
     "name": "Bookmark landing Page",
     "image": "projects/bookmark-landing-page.webp",
-    "link": "https://github.com/Headbwoi/bookmark-landing-page",
-    "liveLink": "https://headbwoi.github.io/bookmark-landing-page/",
+    "link": "https://github.com/xeuxdev/bookmark-landing-page",
+    "liveLink": "https://xeuxdev.github.io/bookmark-landing-page/",
     "about": "Bookmark landing Page. Bookmark provides bookmarking Services for you across three browsers: Chrome, Firefox and Opera.",
     "builtWith": ["html", "css", "tailwindcss", "javaScript", "vs code"]
   },
   {
     "name": "Url Shortener",
     "image": "projects/url-shortener.webp",
-    "link": "https://github.com/Headbwoi/fem-url-shortener",
+    "link": "https://github.com/xeuxdev/fem-url-shortener",
     "liveLink": "https://fem-url-short-ener.netlify.app/",
     "about": "Shortly, A URL shortener. Its a landing page as well as a service, just copy and paste your Links and it shortens it for you keeping all meta-data. you can copy the link and never lose it as its saved to your browser.",
     "builtWith": ["vs code", "react", "typeScript", "tailwindcss", "vite"]

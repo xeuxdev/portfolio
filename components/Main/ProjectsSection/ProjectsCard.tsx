@@ -53,6 +53,7 @@ const ProjectsCard = ({
             className={`min-w-[20rem] w-[37rem] md:w-[50rem] lg:w-[42rem] h-[33rem] sm:h-[30rem] lg:h-[22rem] xl:h-[28rem] absolute  rounded-xl duration-300 cursor-pointer opacity-10 lg:opacity-25 hover:opacity-50 ${
               orientation === 1 ? "lg:left-0" : "lg:left-full"
             }`}
+            target="_blank"
           >
             <Image src={`/${image}`} alt={`${name} image`} fill priority />
           </Link>
@@ -69,6 +70,7 @@ const ProjectsCard = ({
           <Link
             href={`${link}`}
             className="mb-4 text-xl font-bold tracking-wider text-white capitalize cursor-pointer select-none lg:text-2xl"
+            target="_blank"
           >
             {name}
           </Link>
@@ -86,12 +88,20 @@ const ProjectsCard = ({
             ))}
           </div>
           <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
-            <Link href={`${link}`} aria-label={`${name} github link`}>
+            <Link
+              href={`${link}`}
+              target="_blank"
+              aria-label={`${name} github link`}
+            >
               <>
                 <Github />
               </>
             </Link>
-            <Link href={`${liveLink}`} aria-label={`${name} live link`}>
+            <Link
+              href={`${liveLink}`}
+              target="_blank"
+              aria-label={`${name} live link`}
+            >
               <>
                 <LiveLink />
               </>
