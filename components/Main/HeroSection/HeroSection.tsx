@@ -63,7 +63,7 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            As a<span className="text-cyan"> Frontend Developer,</span> I
+            As a<span className="text-cyan"> Full Stack Developer,</span> I
             specialize in building and launching dynamic user interfaces and
             experiences that captivate both clients and companies. I harness the
             power of the <Text text="efficient technologies " /> and{" "}
