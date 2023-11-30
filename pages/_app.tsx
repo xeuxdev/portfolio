@@ -3,10 +3,10 @@ import type { AppProps } from "next/app"
 import { ContactIcons, ContactIconsMobile, Header } from "../components"
 import { LazyMotion, domAnimation } from "framer-motion"
 import { useMediaQuery } from "../hooks/useMediaQuery"
-import { Poppins } from "next/font/google"
+import { Raleway } from "next/font/google"
 import { useEffect, useState } from "react"
 
-const poppins = Poppins({
+const poppins = Raleway({
   subsets: ["latin"],
   variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],

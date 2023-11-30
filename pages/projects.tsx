@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
               whileInView={projectVariant.heading}
               viewport={{ once: true }}
             >
-              Here are a few of the projects i have done{" "}
+              Here are my personal projects
             </m.h1>
           </section>
 

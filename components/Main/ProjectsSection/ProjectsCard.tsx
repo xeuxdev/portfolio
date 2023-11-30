@@ -4,7 +4,6 @@ import Link from "next/link"
 import { projectVariant } from "../../../variants/projectVariant"
 import Github from "../../Utils/icons/Github"
 import LiveLink from "./icon/LiveLink"
-import { useEffect, useState } from "react"
 
 export type ProjectCardprops = {
   image: string
@@ -25,16 +24,6 @@ const ProjectsCard = ({
   builtWith,
   orientation,
 }: ProjectCardprops) => {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
   return (
     <m.div
       className="w-full rounded-lg shadow-2xl lg:shadow-none"

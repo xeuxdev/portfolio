@@ -30,17 +30,26 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              A sophomore computer science student, As a Frontend Developer, I
-              specialize in building and launching dynamic user interfaces and
-              experiences that captivate both clients and companies. I harness
-              the power of the latest technologies and design systems to create
-              interactive solutions that leave a lasting impression. My primary
-              objective is to deliver the best, easiest, and most functional
-              long-term solutions that not only meet the requirements of the
-              company but also exceed the expectations of clients. With a strong
-              commitment to user satisfaction, I strive to create seamless and
-              engaging experiences that seamlessly blend aesthetic appeal with
-              practical functionality.
+              A sophomore computer science student, As a results and performance
+              driven Frontend Developer with one year of professional
+              experience, specializing in crafting interactive and visually
+              appealing user interfaces. Proficient in leveraging the latest
+              technologies and design systems, my goal is to deliver superior,
+              user-centric solutions that align with both client and company
+              requirements.
+            </m.p>
+            <m.p
+              className="mb-6 text-lg font-normal text-text lg:text-xl"
+              variants={aboutVariant}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={aboutVariant.p2}
+              viewport={{ once: true }}
+            >
+              My approach involves a deep understanding of project requirements,
+              collaborating closely with cross-functional teams to make informed
+              decisions that ensure optimal functionality. Committed to
+              delivering the best and most user-friendly experiences, I am adept
+              at meeting project goals efficiently and on schedule.
             </m.p>
             <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"

@@ -1,5 +1,74 @@
 [
   {
+    "name": "EasyMailer",
+    "image": "projects/easymailer.png",
+    "link": "https://github.com/xeuxdev/easy-mailer",
+    "liveLink": "https://easymailer.vercel.app/",
+    "about": "EasyMailer - Simplify Your Email Experience Ensuring Seamless Communication!. EasyMailer helps you skip the hassle of configuration – saving you time and effort!",
+    "builtWith": [
+      "nextjs 13",
+      "react",
+      "tailwindcss",
+      "TypeScript",
+      "prisma",
+      "mantine",
+      "radix UI",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "Links Park",
+    "image": "projects/links-park.png",
+    "link": "https://github.com/xeuxdev/linky",
+    "liveLink": "https://links-park.vercel.app/",
+    "about": "LinksPark - All Your Links. In one, Link. Unleash the power of a platform that not only consolidates your links but also provides insightful analytics.",
+    "builtWith": [
+      "nextjs 13",
+      "react",
+      "tailwindcss",
+      "TypeScript",
+      "framer-motion",
+      "prisma",
+      "drizzle",
+      "mantine",
+      "radix UI",
+      "MySQL"
+    ]
+  },
+  {
+    "name": "Crowdo",
+    "image": "projects/crowdo.webp",
+    "link": "https://github.com/xeuxdev/crowdo",
+    "liveLink": "https://crowdo.vercel.app/",
+    "about": "Crowdo - Your Universal Crowdfunding Platform, Empowering users with seamless crowdfunding experiences.",
+    "builtWith": [
+      "nextjs 13",
+      "react",
+      "tailwindcss",
+      "TypeScript",
+      "framer-motion",
+      "prisma",
+      "mantine",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "Anonyy",
+    "image": "projects/anonyy.png",
+    "link": "https://github.com/xeuxdev/anonymous",
+    "liveLink": "https://anonyy.vercel.app/",
+    "about": "Anonymously Send Messages to People. Send and receive messages anonymously",
+    "builtWith": [
+      "nextjs 13",
+      "react",
+      "tailwindcss",
+      "TypeScript",
+      "shadcn/ui",
+      "prisma",
+      "mongodb"
+    ]
+  },
+  {
     "name": "Belle Full ",
     "image": "projects/belle-full.webp",
     "link": "https://github.com/xeuxdev/Belle-full",
@@ -76,23 +145,6 @@
       "vite",
       "nodejs",
       "framer-motion"
-    ]
-  },
-  {
-    "name": "Crowdo APP",
-    "image": "projects/crowdo-app.webp",
-    "link": "https://github.com/xeuxdev/crowdo-app",
-    "liveLink": "https://crowdo-app.vercel.app/",
-    "about": "A crowd funding App for everyone, State your goals and how to crowd fund and let us do the hard parts for you. viewers can select the package they choose to fund. Still in progress but coming soon.",
-    "builtWith": [
-      "react",
-      "node",
-      "tailwindcss",
-      "vs code",
-      "vite",
-      "framer-motion",
-      "express",
-      "typeScript"
     ]
   },
   {
