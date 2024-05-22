@@ -47,7 +47,7 @@ const Header = () => {
               initial={{ y: -100 }}
               animate={{ y: 0, transition: { duration: 0.3, delay: 0.1 } }}
             >
-              <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
+              <Link href={`https://docs.google.com/document/d/1mWh65035Tcg1RFk-FHXDbOZ7TFHqjc7P-SuRcjNEqO8`} target="_blank" rel="noreferrer">
                 <span className="mr-3 text-base font-normal tracking-wide text-white capitalize group:hover:mr-1">
                   resume
                 </span>
