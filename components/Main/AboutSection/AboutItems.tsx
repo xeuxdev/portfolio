@@ -30,8 +30,8 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              A penultimate computer science student, As a results and performance
-              driven Frontend Developer with 2+ years of professional
+              As a results and performance
+              driven Frontend Developer with 3+ years of professional
               experience, specializing in crafting interactive and visually
               appealing user interfaces. Proficient in leveraging the latest
               technologies and design systems, my goal is to deliver superior,
