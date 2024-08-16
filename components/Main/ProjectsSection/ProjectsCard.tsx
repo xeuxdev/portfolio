@@ -12,7 +12,7 @@ export type ProjectCardprops = {
   link: string
   liveLink: string
   builtWith: string[]
-  orientation: number
+  orientation: "left" | "right"
 }
 
 const ProjectsCard = ({
@@ -40,7 +40,7 @@ const ProjectsCard = ({
           <Link
             href={`${liveLink}`}
             className={`min-w-[20rem] w-[37rem] md:w-[50rem] lg:w-[42rem] h-[33rem] sm:h-[30rem] lg:h-[22rem] xl:h-[28rem] absolute  rounded-xl duration-300 cursor-pointer opacity-10 lg:opacity-25 hover:opacity-50 ${
-              orientation === 1 ? "lg:left-0" : "lg:left-full"
+              orientation === "left" ? "lg:left-0" : "lg:left-full"
             }`}
             target="_blank"
           >
@@ -51,7 +51,7 @@ const ProjectsCard = ({
         {/* text */}
         <div
           className={`${
-            orientation === 1
+            orientation === "left"
               ? "absolute top-1/2 right-0 -translate-y-1/2 max-w-xl px-6 py-8 lg:p-0 flex lg:items-end flex-col w-full"
               : "absolute top-1/2 left-0 -translate-y-1/2 max-w-xl px-6 py-8 lg:p-0 flex lg:items-start flex-col w-full"
           }`}
